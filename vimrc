@@ -1,35 +1,67 @@
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
-" Use Vim settings, rather then Vi settings (much better!).
+" Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
+setl fo=aw2tq    " format option to autowrap
+
+" Centralize backups, swapfiles and undo history
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+if exists("&undodir")
+  set undodir=~/.vim/undo
 endif
+
 set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
+set ruler		      " show the cursor position
+set showcmd		    " display incomplete commands
+
+set ttyfast     " optimize for fast terminal connections
+
+" Searches!
 set incsearch		" do incremental searching
+set ignorecase  " case-insensitive searches
+set smartcase   " ... unless they contain 1+ capital letter.
 
 " Soft tabs!
 set expandtab
 set tabstop=2
 set shiftwidth=2
 
+set splitright       " new vsplit screen splits to the right
+set splitbelow       " new split screen splits to the bottom
+
 " Syntastic!
 let g:syntastic_enable_signs=1
 
-" Line numbers!
-set number
+set number           " display line numbers
+set cursorline       " highlight current line
+set nolist           " don't display whitespace
+
+set noerrorbells     " Disable error bells
+set nostartofline    " Don’t reset cursor to start of line when moving around.
+set visualbell t_vb= " turn off error beep/flash
+set novisualbell     " turn off visual bell
+
+" Colors
+let &t_Co=256        " vim thinks the terminal only supports 8 colors.
+colorscheme molokai
+
+" Status Bar
+set wildmenu      " tab complete status bar
+set laststatus=2  " always show the status bar
+set statusline=%<%f\ %h%w%m%r%y\ %{&ff}\ %=L:%l/%L\ (%p%%)\ C:%c%V\ B:%o\ F:%{foldlevel('.')} 
+
+set showmode          " show the current mode
+set title             " show filename in window titlebar
+
+" Use relative line numbers
+if exists("&relativenumber")
+  set relativenumber
+  au BufReadPost * set relativenumber
+endif
 
 " Mac OS X copy/paste!
 nmap <F1> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
