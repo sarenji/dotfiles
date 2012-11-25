@@ -26,7 +26,8 @@ export PATH="$PATH:~/code/android-sdk-macosx/tools"
 # for postgresql one-click installer
 export PATH="$PATH:/Library/PostgreSQL/9.1/bin"
 
-source ~/.git-completion.sh
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
 export PS1='\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
 
 # Setting PATH for Python 2.7
@@ -34,12 +35,3 @@ export PS1='\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
