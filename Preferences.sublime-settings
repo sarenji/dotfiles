@@ -1,17 +1,23 @@
 {
-  "color_scheme": "Packages/User/Espresso Soda.tmTheme",
-  "theme": "Soda Light.sublime-theme",
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-  "font-face": "Monaco",
-  "rulers": [ 80 ],
-  "highlight_line": true,
-  "caret_style": "phase",
-  "line_padding_top": 1,
-  "scroll_past_end": true,
-  "ensure_newline_at_eof_on_save": true,
-  "shift_tab_unindent": true,
-  "highlight_modified_tabs": true,
-  "bold_folder_labels": true,
-  "ignored_packages": []
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font-face": "Monaco",
+	"font_size": 12.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+	],
+	"line_padding_top": 1,
+	"rulers":
+	[
+		80
+	],
+	"scroll_past_end": true,
+	"shift_tab_unindent": true,
+	"tab_size": 2,
+	"theme": "Soda Light.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
