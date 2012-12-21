@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="~/bin:/usr/local/bin:$PATH"
 . ~/.nvm/nvm.sh
+[[ -s "/Users/davidpeter/.rvm/scripts/rvm" ]] && source "/Users/davidpeter/.rvm/scripts/rvm"
 
 # for postgresql one-click installer
 export PATH="$PATH:/Library/PostgreSQL/9.1/bin"
@@ -67,4 +68,3 @@ alias rit="ruby -Ilib:test"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
