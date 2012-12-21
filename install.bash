@@ -32,3 +32,5 @@ chsh -s /usr/local/bin/zsh
 # install zsh syntax highlighting
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+# install rvm
+\curl -L https://get.rvm.io | bash -s stable --ruby
