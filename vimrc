@@ -134,4 +134,3 @@ if !exists(":DiffOrig")
 endif
 
 au BufRead,BufNewFile *.scss set filetype=scss
-call pathogen#infect()
