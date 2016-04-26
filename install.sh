@@ -28,3 +28,7 @@ do
   ln -sf `pwd`/$dotfile ~/.$dotfile
 done
 
+# symlink subl
+mkdir -p ~/bin
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+

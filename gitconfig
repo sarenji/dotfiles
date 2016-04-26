@@ -10,3 +10,5 @@
   amend = commit --amend
 [core]
 	excludesfile = /Users/1000memories/.gitignore
+[credential]
+	helper = osxkeychain
