@@ -8,7 +8,7 @@ mkdir -p ~/.vim/swaps
 mkdir -p ~/.vim/backups
 mkdir -p ~/.vim/undo
 mkdir -p ~/.vim/colors
-curl -so https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim ~/.vim/colors/molokai.vim
+curl -s https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim -o ~/.vim/colors/molokai.vim
 
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
