@@ -30,3 +30,4 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 export PS1='\w\[\033[32m\]$(__git_ps1) \[\033[0m\]$ '
 
+source ~/.bashrc

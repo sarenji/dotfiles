@@ -1,6 +1,6 @@
 [user]
 	name = David Peter
-	email = david@1000memories.com
+	email = david.a.peter@gmail.com
 [color]
 	diff = auto
 	status = auto
@@ -9,6 +9,6 @@
   today = log --stat --since='1 Day Ago' --graph --pretty=oneline --abbrev-commit --date=relative
   amend = commit --amend
 [core]
-	excludesfile = /Users/1000memories/.gitignore
+	excludesfile = /Users/davidpeter/.gitignore
 [credential]
 	helper = osxkeychain

@@ -42,6 +42,9 @@ export PATH="~/bin:/usr/local/bin:$PATH"
 # for postgresql one-click installer
 export PATH="$PATH:/Library/PostgreSQL/9.1/bin"
 
+# for yarn
+export PATH="$PATH:$HOME/.yarn/bin"
+
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
